@@ -1,154 +1,79 @@
-<!DOCTYPE html><html lang="ru">
+<!DOCTYPE html>
+<html lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Бобер Банк</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Бобер Банк 🦫</title>
   <style>
-    :root {
-      --primary-color: #6b3e26;
-      --accent-color: #00c9a7;
-      --bg-color: #f0f0f5;
-      --text-color: #1c1c1e;
-    }* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: 'Montserrat', sans-serif;
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  line-height: 1.6;
-}
-
-header {
-  background-color: var(--primary-color);
-  color: white;
-  padding: 30px 20px;
-  text-align: center;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-header h1 {
-  font-size: 2.5em;
-  margin-bottom: 10px;
-}
-
-nav {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  background-color: var(--primary-color);
-  padding: 15px;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  position: relative;
-}
-
-nav a::after {
-  content: '';
-  display: block;
-  width: 0;
-  height: 2px;
-  background: var(--accent-color);
-  transition: width 0.3s;
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-}
-
-nav a:hover::after {
-  width: 100%;
-}
-
-.hero {
-  background: linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Beaver_in_montana.jpg/1280px-Beaver_in_montana.jpg') center/cover;
-  color: white;
-  text-align: center;
-  padding: 120px 20px;
-}
-
-.hero h2 {
-  font-size: 3em;
-  margin-bottom: 15px;
-}
-
-.section {
-  padding: 60px 20px;
-  max-width: 1000px;
-  margin: auto;
-}
-
-.section h2 {
-  color: var(--primary-color);
-  margin-bottom: 20px;
-  font-size: 2em;
-  border-bottom: 2px solid var(--accent-color);
-  display: inline-block;
-}
-
-ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-ul li {
-  background: white;
-  margin-bottom: 15px;
-  padding: 15px 20px;
-  border-left: 5px solid var(--accent-color);
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.footer {
-  background-color: var(--primary-color);
-  color: white;
-  text-align: center;
-  padding: 20px;
-  font-size: 0.9em;
-}
-
+    body {
+      font-family: sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #4a2f27;
+      color: white;
+      padding: 40px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    main {
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+      background: white;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    h2 {
+      color: #4a2f27;
+    }
+    footer {
+      text-align: center;
+      background: #333;
+      color: white;
+      padding: 20px;
+      margin-top: 40px;
+    }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>Бобер Банк</h1>
-    <p>С нами надёжно, как у бобра в хатке 🦫</p>
+    <h1>Бобер Банк 🦫</h1>
+    <p>Твое новое финансовое убежище</p>
   </header>
-  <nav>
-    <a href="#about">О нас</a>
-    <a href="#services">Услуги</a>
-    <a href="#contact">Контакты</a>
-  </nav>
-  <section class="hero">
-    <h2>Добро пожаловать в Бобер Банк</h2>
-    <p>Молодёжный финансовый сервис нового поколения</p>
-  </section>
-  <section id="about" class="section">
-    <h2>О нас</h2>
-    <p>Бобер Банк — это цифровой банк для молодёжи, который сочетает удобство, безопасность и стиль. Мы делаем управление финансами лёгким и интересным.</p>
-  </section>
-  <section id="services" class="section">
-    <h2>Наши услуги</h2>
-    <ul>
-      <li>Мгновенное открытие счёта онлайн</li>
-      <li>Удобное мобильное приложение с кэшбэком</li>
-      <li>Счета в мультивалюте и криптокошельки</li>
-      <li>Образовательные курсы по инвестициям</li>
-    </ul>
-  </section>
-  <section id="contact" class="section">
-    <h2>Контакты</h2>
-  </section>
-  <footer class="footer">
-    <p>&copy; 2025 Бобер Банк. Все права защищены.</p>
+
+  <main>
+    <section>
+      <h2>О нас</h2>
+      <p>Мы — молодой банк для тех, кто ценит стиль, скорость и безопасность. Финансы теперь — просто и по кайфу.</p>
+    </section>
+
+    <section>
+      <h2>Услуги</h2>
+      <ul>
+        <li>🚀 Моментальный счёт онлайн</li>
+        <li>💳 Молодёжная карта с кэшбэком</li>
+        <li>📱 Удобное мобильное приложение</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Контакты</h2>
+      <p>📧 info@boberbank.ru</p>
+      <p>📞 +7 800 555-BOBR</p>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Бобер Банк. Все права защищены.
   </footer>
+
 </body>
 </html>
