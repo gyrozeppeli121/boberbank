@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мой Счёт - Бобер Банк</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: #121212;
+      color: white;
+      font-family: 'Rubik', sans-serif;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #00ffae;
+    }
+
+    .balance {
+      margin: 30px auto;
+      padding: 20px;
+      background: #1e1e1e;
+      border-radius: 20px;
+      width: 300px;
+      box-shadow: 0 0 10px #00ffae55;
+    }
+
+    .money {
+      font-size: 2rem;
+      margin: 10px 0;
+      color: #00ffae;
+    }
+
+    .actions button {
+      margin: 10px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 15px;
+      background-color: #00ffae;
+      color: black;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .actions button:hover {
+      background-color: #00cc8c;
+    }
+
+    .back {
+      margin-top: 30px;
+      display: inline-block;
+      color: #888;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>Мой счёт в Бобер Банке</h1>
+
+  <div class="balance">
+    <p>💰 Ваш баланс:</p>
+    <div class="money" id="money">0₽</div>
+  </div>
+
+  <div class="actions">
+    <button onclick="deposit()">Пополнить +100₽</button>
+    <button onclick="withdraw()">Снять -50₽</button>
+  </div>
+
+  <a href="index.html" class="back">← Назад на главную</a>
+
+  <script>
+    let balance = 0;
+    const moneyEl = document.getElementById('money');
+
+    function updateDisplay() {
+      moneyEl.textContent = balance + '₽';
+    }
+
+    function deposit() {
+      balance += 100;
+      updateDisplay();
+    }
+
+    function withdraw() {
+      if (balance >= 50) {
+        balance -= 50;
+      } else {
+        alert("Недостаточно средств!");
+      }
+      updateDisplay();
+    }
+  </script>
+</body>
+</html>
